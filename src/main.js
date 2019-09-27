@@ -22,6 +22,8 @@ import enUS from "./locale/enUS";
 import zhCN from "./locale/zhCN";
 import VueI18n from "vue-i18n";
 import queryString from "query-string";
+import VueHighlightJS from "vue-highlightjs";
+import "highlight.js/styles/github.css";
 
 Vue.config.productionTip = false;
 
@@ -39,6 +41,7 @@ Vue.use(Dropdown);
 Vue.use(DatePicker);
 Vue.use(LocaleProvider);
 Vue.use(VueI18n);
+Vue.use(VueHighlightJS);
 Vue.component("Authorized", Authorized);
 
 const IconFont = Icon.createFromIconfontCN({

@@ -8,7 +8,7 @@
         >{{ step.payAccount }}</a-form-item
       >
       <a-form-item
-        label="付款密码"
+        label="密码"
         :label-col="formItemLayout.labelCol"
         :wrapper-col="formItemLayout.wrapperCol"
       >

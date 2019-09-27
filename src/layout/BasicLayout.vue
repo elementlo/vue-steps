@@ -1,6 +1,6 @@
 <template>
   <div :class="[`nav-theme-${navTheme}`, `nav-layout-${navLayout}`]">
-    <a-layout id="components-layout-demo-side" style="min-height: 100vh">
+    <a-layout style="min-height: 100vh">
       <a-layout-sider
         v-if="navLayout === 'left'"
         :theme="navTheme"
@@ -22,7 +22,7 @@
           ></a-icon>
           <Header></Header>
         </a-layout-header>
-        <a-layout-content style="margin: 0 16px">
+        <a-layout-content style="margin: 24px 24px 0px">
           <router-view></router-view>
         </a-layout-content>
         <a-layout-footer style="text-align: center">
